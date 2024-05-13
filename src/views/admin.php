@@ -32,14 +32,18 @@ if ($_SESSION['level'] != 'admin') {
         <div class="p-4 my-4 bg-blue-100 border border-blue-400 rounded">
             Anda login sebagai <b>Administrator</b>
         </div>
-        <a class="inline-block p-3 my-1 bg-blue-500 text-white rounded-md shadow" href="admin.php">Administrator</a>
-        <a class="inline-block p-3 my-1 bg-blue-500 text-white rounded-md shadow" href="admin.php?url=spp">SPP</a>
-        <a class="inline-block p-3 my-1 bg-blue-500 text-white rounded-md shadow" href="admin.php?url=kelas">Kelas</a>
-        <a class="inline-block p-3 my-1 bg-blue-500 text-white rounded-md shadow" href="admin.php?url=siswa">Siswa</a>
-        <a class="inline-block p-3 my-1 bg-blue-500 text-white rounded-md shadow" href="admin.php?url=petugas">Petugas</a>
-        <a class="inline-block p-3 my-1 bg-blue-500 text-white rounded-md shadow" href="admin.php?url=pembayaran">Pembayaran</a>
-        <a class="inline-block p-3 my-1 bg-blue-500 text-white rounded-md shadow" href="admin.php?url=laporan">Laporan</a>
-        <a class="inline-block p-3 my-1 bg-blue-500 text-white rounded-md shadow" href="../controllers/logout.php">Logout</a>
+        <br />
+        <ul class="flex flex-wrap gap-y-[27px] justify-center">
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php">Administrator</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/spp">SPP</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/kelas">Kelas</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/siswa">Siswa</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/petugas">Petugas</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/pembayaran">Pembayaran</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/laporan">Laporan</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="../controllers/logoutController.php">Logout</a></li>
+        </ul>
+        <br />
 
         <div class="p-8 mt-4 border rounded-md">
             <div class="card">

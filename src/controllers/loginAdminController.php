@@ -22,6 +22,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "<script>
     alert('Username atau Password Anda Salah!');
-    window.location.assign('../loginAdmin.php');
+    window.location.assign('../views/loginAdmin.php');
     </script>";
 }
