@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Siswa - Aplikasi Pembayaran SPP</title>
-    <link rel="stylesheet" href="./assets/css/style.css?ver=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="bg-gray-200 text-gray-700">
@@ -30,7 +30,7 @@
                 <button class="bg-blue-500 hover:bg-blue-600 text-white text-sm font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline duration-300" type="submit">
                     Sign In
                 </button>
-                <a class="inline-block align-baseline font-bold text-xs text-blue-500 hover:text-blue-600 duration-300 mt-3" href="./src/loginAdmin.php">
+                <a class="inline-block align-baseline font-bold text-xs text-blue-500 hover:text-blue-600 duration-300 mt-3" href="./src/views/loginAdmin.php">
                     Login sebagai Administrator / Petugas
                 </a>
             </form>
