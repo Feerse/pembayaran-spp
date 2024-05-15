@@ -34,14 +34,14 @@ if ($_SESSION['level'] != 'admin') {
         </div>
         <br />
         <ul class="flex flex-wrap gap-y-[27px] justify-center">
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php">Administrator</a></li>
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/spp">SPP</a></li>
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/kelas">Kelas</a></li>
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/siswa">Siswa</a></li>
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/petugas">Petugas</a></li>
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/pembayaran">Pembayaran</a></li>
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="admin.php?url=./layouts/laporan">Laporan</a></li>
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 text-white shadow" href="../controllers/logoutController.php">Logout</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php">Administrator</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=./layouts/spp">SPP</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=./layouts/kelas">Kelas</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=./layouts/siswa">Siswa</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=./layouts/petugas">Petugas</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=./layouts/pembayaran">Pembayaran</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=./layouts/laporan">Laporan</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="../controllers/logoutController.php">Logout</a></li>
         </ul>
         <br />
 
