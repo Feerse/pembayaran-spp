@@ -8,7 +8,7 @@ $query = "INSERT INTO kelas(nama_kelas, kompetensi_keahlian) VALUES('$namaKelas'
 $result = mysqli_query($conn, $query);
 
 if ($result) {
-    echo "<script>alert('Data berhasil disimpan!'); window.location.assign('../views/admin.php?url=./layouts/kelas');</script>";
+    echo "<script>alert('Data berhasil disimpan!'); window.location.assign('../views/admin.php?url=kelas');</script>";
 } else {
-    echo "<script>alert('Data gagal tersimpan!'); window.location.assign('../views/admin.php?url=./layouts/tambah-kelas');</script>";
+    echo "<script>alert('Data gagal tersimpan!'); window.location.assign('../views/admin.php?url=tambah-kelas');</script>";
 }

@@ -14,7 +14,7 @@ $query = "UPDATE siswa SET nisn='$nisnPost', nis='$nis', nama='$nama', id_kelas=
 $result = mysqli_query($conn, $query);
 
 if ($result) {
-    echo "<script>alert('Data berhasil diubah!'); window.location.assign('../views/admin.php?url=./layouts/siswa');</script>";
+    echo "<script>alert('Data berhasil diubah!'); window.location.assign('../views/admin.php?url=siswa');</script>";
 } else {
-    echo "<script>alert('Data gagal diubah!'); window.location.assign('../views/admin.php?url=./layouts/siswa');</script>";
+    echo "<script>alert('Data gagal diubah!'); window.location.assign('../views/admin.php?url=siswa');</script>";
 }

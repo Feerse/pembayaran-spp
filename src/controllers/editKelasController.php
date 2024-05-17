@@ -9,7 +9,7 @@ $query = "UPDATE kelas SET nama_kelas='$namaKelas', kompetensi_keahlian='$kompet
 $result = mysqli_query($conn, $query);
 
 if ($result) {
-    echo "<script>alert('Data berhasil diubah!'); window.location.assign('../views/admin.php?url=./layouts/kelas');</script>";
+    echo "<script>alert('Data berhasil diubah!'); window.location.assign('../views/admin.php?url=kelas');</script>";
 } else {
-    echo "<script>alert('Data gagal diubah!'); window.location.assign('../views/admin.php?url=./layouts/kelas');</script>";
+    echo "<script>alert('Data gagal diubah!'); window.location.assign('../views/admin.php?url=kelas');</script>";
 }
