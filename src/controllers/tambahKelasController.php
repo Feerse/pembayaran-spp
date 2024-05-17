@@ -1,8 +1,8 @@
 <?php
 include '../../inc/conn.php';
 
-$namaKelas = $_POST['nama_kelas'];
-$kompetensiKeahlian = $_POST['kompetensi_keahlian'];
+$namaKelas = htmlspecialchars($_POST['nama_kelas']);
+$kompetensiKeahlian = htmlspecialchars($_POST['kompetensi_keahlian']);
 
 $query = "INSERT INTO kelas(nama_kelas, kompetensi_keahlian) VALUES('$namaKelas', '$kompetensiKeahlian')";
 $result = mysqli_query($conn, $query);

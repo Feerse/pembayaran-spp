@@ -1,8 +1,8 @@
 <?php
 include '../../inc/conn.php';
 
-$tahun = $_POST['tahun'];
-$nominal = $_POST['nominal'];
+$tahun = htmlspecialchars($_POST['tahun']);
+$nominal = htmlspecialchars($_POST['nominal']);
 
 $query = "INSERT INTO spp(tahun, nominal) VALUES('$tahun', '$nominal')";
 $result = mysqli_query($conn, $query);
