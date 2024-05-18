@@ -49,7 +49,6 @@
 
                     <option value="">Pilih SPP</option>
                     <?php
-                    include "../../inc/conn.php";
                     $spp = mysqli_query($conn, "SELECT * FROM spp ORDER BY id_spp ASC");
                     foreach ($spp as $dataSPP) :
                     ?>
