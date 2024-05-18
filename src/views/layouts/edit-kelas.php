@@ -8,7 +8,7 @@ $result = mysqli_query($conn, $query);
 
 $data = mysqli_fetch_array($result);
 ?>
-<a href="?url=./layouts/kelas" class="border p-2 rounded-md inline-block mb-3 shadow-md">
+<a href="?url=kelas" class="border p-2 rounded-md inline-block mb-3 shadow-md">
     < Kembali</a>
         <h4 class="font-bold text-xl mb-6 text-center">Edit Data Kelas</h4>
 

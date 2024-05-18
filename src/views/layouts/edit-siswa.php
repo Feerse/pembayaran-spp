@@ -8,7 +8,7 @@ $result = mysqli_query($conn, $query);
 
 $data = mysqli_fetch_array($result);
 ?>
-<a href="?url=./layouts/siswa" class="border p-2 rounded-md inline-block mb-3 shadow-md">
+<a href="?url=siswa" class="border p-2 rounded-md inline-block mb-3 shadow-md">
     < Kembali</a>
         <h4 class="font-bold text-xl mb-6 text-center">Edit Data Siswa</h4>
 
@@ -30,7 +30,7 @@ $data = mysqli_fetch_array($result);
 
             <div class="relative z-0 w-full mb-5 group">
                 <label for="kelas" class="block mb-2 text-sm font-medium text-gray-500">Kelas</label>
-                <select name="id_kelas" id="kelas" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                <select name="id_kelas" id="kelas" class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
 
                     <option value="<?= $data['id_kelas'] ?>"><?= $data['nama_kelas'] ?></option>
                     <?php
@@ -45,7 +45,7 @@ $data = mysqli_fetch_array($result);
 
             <div class="relative z-0 w-full mb-5 group">
                 <label for="alamat" class="block mb-2 text-sm font-medium text-gray-500">Alamat</label>
-                <textarea name="alamat" id="alamat" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Masukkan alamat siswa" required><?= $data['alamat'] ?></textarea>
+                <textarea name="alamat" id="alamat" rows="4" class="block p-2.5 w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Masukkan alamat siswa" required><?= $data['alamat'] ?></textarea>
             </div>
 
             <div class="relative z-0 w-full mb-5 group">
@@ -55,7 +55,7 @@ $data = mysqli_fetch_array($result);
 
             <div class="relative z-0 w-full mb-5 group">
                 <label for="spp" class="block mb-2 text-sm font-medium text-gray-500">SPP</label>
-                <select name="id_spp" id="spp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                <select name="id_spp" id="spp" class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                     <option value="<?= $data['id_spp'] ?>"><?= $data['tahun'] ?> | <?= number_format($data['nominal'], 2, ',', '.'); ?></option>
                     <?php
                     include "../../inc/conn.php";

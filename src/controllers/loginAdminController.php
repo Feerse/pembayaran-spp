@@ -1,8 +1,8 @@
 <?php
 include '../../inc/conn.php';
 
-$username = $_POST['username'];
-$password = md5($_POST['password']);
+$username = htmlspecialchars($_POST['username']);
+$password = htmlspecialchars(md5($_POST['password']));
 
 $query = "SELECT * FROM petugas WHERE username='$username' AND password='$password'";
 $result = mysqli_query($conn, $query);
