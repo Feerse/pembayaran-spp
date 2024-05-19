@@ -34,7 +34,6 @@ $data = mysqli_fetch_array($result);
 
                     <option value="<?= $data['id_kelas'] ?>"><?= $data['nama_kelas'] ?></option>
                     <?php
-                    include "../../inc/conn.php";
                     $kelas = mysqli_query($conn, "SELECT * FROM kelas ORDER BY nama_kelas ASC");
                     foreach ($kelas as $dataKelas) :
                     ?>
@@ -58,7 +57,6 @@ $data = mysqli_fetch_array($result);
                 <select name="id_spp" id="spp" class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                     <option value="<?= $data['id_spp'] ?>"><?= $data['tahun'] ?> | <?= number_format($data['nominal'], 2, ',', '.'); ?></option>
                     <?php
-                    include "../../inc/conn.php";
                     $resultSPP = mysqli_query($conn, "SELECT * FROM spp ORDER BY id_spp ASC");
                     foreach ($resultSPP as $dataSPP) :
                     ?>
