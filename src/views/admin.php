@@ -24,6 +24,7 @@ if ($_SESSION['level'] != 'admin') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Aplikasi Pembayaran SPP</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Jaga-jaga jika style.css tidak ter-update -->
 </head>
 
 <body class="text-gray-700">
