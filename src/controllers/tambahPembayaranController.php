@@ -14,7 +14,17 @@ $query = "INSERT INTO pembayaran(id_petugas, nisn, tgl_bayar, bulan_dibayar, tah
 $result = mysqli_query($conn, $query);
 
 if ($result) {
-    echo "<script>alert('Data berhasil disimpan!'); window.location.assign('../views/admin.php?url=pembayaran');</script>";
+    echo "<script>alert('Data berhasil disimpan!');";
+    if ($_SESSION['level'] == 'admin') {
+        echo "window.location.assign('../views/admin.php?url=pembayaran');</script>";
+    } else {
+        echo "window.location.assign('../views/petugas.php?url=pembayaran');</script>";
+    }
 } else {
-    echo "<script>alert('Data gagal tersimpan!'); window.location.assign('../views/admin.php?url=tambah-pembayaran');</script>";
+    echo "<script>alert('Data gagal tersimpan!');";
+    if ($_SESSION['level'] == 'admin') {
+        echo "window.location.assign('../views/admin.php?url=tambah-pembayaran');</script>";
+    } else {
+        echo "window.location.assign('../views/petugas.php?url=tambah-pembayaran');</script>";
+    }
 }
