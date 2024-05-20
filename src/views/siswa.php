@@ -27,7 +27,7 @@ if (empty($_SESSION['nisn'])) {
         <div class="p-4 my-4 bg-blue-100 border border-blue-400 rounded">
             Anda login sebagai siswa <b><?= $_SESSION['nama'] ?></b>
         </div>
-        <a class="absolute right-0 top-0 m-8 py-1 px-3 rounded-md bg-red-500 hover:bg-red-600 duration-300 text-white shadow" href="../controllers/logoutController.php">Logout</a>
+        <a class="absolute right-0 top-0 m-8 py-1 px-3 rounded-md bg-red-500 hover:bg-red-600 duration-300 text-white shadow" href="../controllers/LogoutController.php">Logout</a>
 
         <div class="p-8 mt-4 border rounded-md">
             <div class="card">

@@ -39,7 +39,7 @@
                     </td>
                     <td>
                         <a href="?url=edit-spp&id_spp=<?= $data['id_spp'] ?>" class="inline-block mt-2 py-2 px-3 m-1 text-gray-900 bg-yellow-300 hover:bg-yellow-400 rounded-md duration-300">Edit</a>
-                        <a href="../controllers/hapusSppController.php?id_spp=<?= $data['id_spp'] ?>" class="inline-block mb-2 py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
+                        <a href="../controllers/SppController.php?action=delete&id_spp=<?= $data['id_spp'] ?>" class="inline-block mb-2 py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

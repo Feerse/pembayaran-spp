@@ -13,7 +13,7 @@ $data = mysqli_fetch_array($result);
     < Kembali</a>
         <h4 class="font-bold text-xl mb-6 text-center">Pembayaran SPP</h4>
 
-        <form class="max-w-md mx-auto" action="../controllers/tambahPembayaranController.php?nisn=<?= $nisn ?>" method="post">
+        <form class="max-w-md mx-auto" action="../controllers/PembayaranController.php?action=add&nisn=<?= $nisn ?>" method="post">
             <input value="<?= $data['id_spp'] ?>" name="id_spp" type="hidden" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer cursor-not-allowed" placeholder=" " required />
 
             <div class="relative z-0 w-full mb-5 group">

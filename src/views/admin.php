@@ -42,7 +42,7 @@ if ($_SESSION['level'] != 'admin') {
             <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=petugas">Petugas</a></li>
             <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=pembayaran">Pembayaran</a></li>
             <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="admin.php?url=laporan">Laporan</a></li>
-            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="../controllers/logoutController.php">Logout</a></li>
+            <li class="inline-block"><a class="py-4 px-11 my-1 bg-blue-500 hover:bg-blue-600 duration-300 text-white shadow" href="../controllers/LogoutController.php">Logout</a></li>
         </ul>
         <br />
 

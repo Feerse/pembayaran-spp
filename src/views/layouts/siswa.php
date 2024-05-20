@@ -69,7 +69,7 @@
                     </td>
                     <td>
                         <a href="?url=edit-siswa&nisn=<?= $data['nisn'] ?>" class="inline-block mt-2 font-medium py-2 px-3 m-1 text-gray-900 bg-yellow-300 hover:bg-yellow-400 rounded-md duration-300">Edit</a>
-                        <a href="../controllers/hapusSiswaController.php?nisn=<?= $data['nisn'] ?>" class="inline-block mb-2 font-medium py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
+                        <a href="../controllers/SiswaController.php?action=delete&nisn=<?= $data['nisn'] ?>" class="inline-block mb-2 font-medium py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

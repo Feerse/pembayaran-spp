@@ -93,7 +93,7 @@ if (isset($_SESSION['id_petugas'])) :
                             </td>
                             <?php if (isset($_SESSION['id_petugas'])) : ?>
                                 <td>
-                                    <a href="../controllers/hapusPembayaranController.php?id_pembayaran=<?= $data['id_pembayaran'] ?>" class="inline-block mb-2 font-medium py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data pembayaran ini?')">Hapus</a>
+                                    <a href="../controllers/PembayaranController.php?action=delete&id_pembayaran=<?= $data['id_pembayaran'] ?>" class="inline-block mb-2 font-medium py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data pembayaran ini?')">Hapus</a>
                                 </td>
                             <?php endif ?>
                         </tr>

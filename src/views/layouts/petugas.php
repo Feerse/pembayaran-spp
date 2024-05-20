@@ -51,7 +51,7 @@
                     </td>
                     <td>
                         <a href="?url=edit-petugas&id_petugas=<?= $data['id_petugas'] ?>" class="inline-block mt-2 font-medium py-2 px-3 m-1 text-gray-900 bg-yellow-300 hover:bg-yellow-400 rounded-md duration-300">Edit</a>
-                        <a href="../controllers/hapusPetugasController.php?id_petugas=<?= $data['id_petugas'] ?>" class="inline-block mb-2 font-medium py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
+                        <a href="../controllers/PetugasController.php?action=delete&id_petugas=<?= $data['id_petugas'] ?>" class="inline-block mb-2 font-medium py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

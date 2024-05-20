@@ -1,5 +1,5 @@
 <h4 class="font-bold text-xl mb-6">Halaman Laporan Pembayaran</h4>
-<a href="../controllers/cetakLaporanController.php" class="inline-block py-2 px-3 m-2 text-gray-900 bg-amber-300 hover:bg-amber-400 rounded-md duration-300 whitespace-nowrap">Cetak Laporan</a>
+<a href="../controllers/CetakLaporanController.php" class="inline-block py-2 px-3 m-2 text-gray-900 bg-amber-300 hover:bg-amber-400 rounded-md duration-300 whitespace-nowrap">Cetak Laporan</a>
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">

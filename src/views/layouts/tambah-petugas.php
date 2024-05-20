@@ -2,7 +2,7 @@
     < Kembali</a>
         <h4 class="font-bold text-xl mb-6 text-center">Tambah Data Petugas</h4>
 
-        <form class="max-w-md mx-auto" action="../controllers/tambahPetugasController.php" method="post">
+        <form class="max-w-md mx-auto" action="../controllers/PetugasController.php?action=add" method="post">
 
             <div class="relative z-0 w-full mb-5 group">
                 <input type="text" name="username" id="username" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer" placeholder=" " required />
