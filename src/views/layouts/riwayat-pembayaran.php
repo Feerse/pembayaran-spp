@@ -1,8 +1,14 @@
 <?php
-$nisn = $_GET['nisn'];
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+$nisn = (isset($_SESSION['id_petugas'])) ? $_GET['nisn'] : $_SESSION['nisn'];
+
+if (isset($_SESSION['id_petugas'])) :
 ?>
-<a href="?url=pembayaran" class="border p-2 rounded-md inline-block mb-3 shadow-md">
-    < Kembali</a>
+    <a href="?url=pembayaran" class="border p-2 rounded-md inline-block mb-3 shadow-md">
+        < Kembali</a>
+        <?php endif ?>
         <h4 class="font-bold text-xl mb-6">Halaman Riwayat Pembayaran</h4>
 
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -39,9 +45,11 @@ $nisn = $_GET['nisn'];
                         <th scope="col" class="px-6 py-3">
                             Petugas
                         </th>
-                        <th scope="col" class="px-6 py-3">
-                            Aksi
-                        </th>
+                        <?php if (isset($_SESSION['id_petugas'])) : ?>
+                            <th scope="col" class="px-6 py-3">
+                                Aksi
+                            </th>
+                        <?php endif ?>
                     </tr>
                 </thead>
                 <tbody>
@@ -83,9 +91,11 @@ $nisn = $_GET['nisn'];
                             <td class="px-6 py-4">
                                 <?= $data['nama_petugas']; ?>
                             </td>
-                            <td>
-                                <a href="../controllers/hapusPembayaranController.php?id_pembayaran=<?= $data['id_pembayaran'] ?>" class="inline-block mb-2 font-medium py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data pembayaran ini?')">Hapus</a>
-                            </td>
+                            <?php if (isset($_SESSION['id_petugas'])) : ?>
+                                <td>
+                                    <a href="../controllers/hapusPembayaranController.php?id_pembayaran=<?= $data['id_pembayaran'] ?>" class="inline-block mb-2 font-medium py-2 px-3 m-1 text-gray-900 bg-red-300 hover:bg-red-400 rounded-md duration-300" onclick="return confirm('Apakah Anda yakin ingin menghapus data pembayaran ini?')">Hapus</a>
+                                </td>
+                            <?php endif ?>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
