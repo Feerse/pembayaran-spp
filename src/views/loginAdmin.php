@@ -14,7 +14,7 @@
     <div class="flex justify-center items-center h-[100vh]">
 
         <div class="w-full max-w-sm">
-            <form action="../controllers/LoginAdminController.php" method="post" class="bg-white shadow-md rounded-md px-8 pt-6 pb-8 mb-4">
+            <form action="../controllers/LoginController.php?login_as=admin" method="post" class="bg-white shadow-md rounded-md px-8 pt-6 pb-8 mb-4">
                 <h1 class="font-bold text-center mb-4 text-2xl">Login Admin / Petugas</h1>
                 <img src="../../assets/logo-spp.png" alt="logo-spp" class="mb-5">
                 <div class="mb-4">

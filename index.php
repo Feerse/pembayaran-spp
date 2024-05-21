@@ -13,7 +13,7 @@
 <body class="bg-gray-200 text-gray-700">
     <div class="flex justify-center items-center h-[100vh]">
         <div class="w-full max-w-sm">
-            <form action="./src/controllers/LoginSiswaController.php" method="post" class="bg-white shadow-md rounded-md px-8 pt-6 pb-8 mb-4">
+            <form action="./src/controllers/LoginController.php?login_as=siswa" method="post" class="bg-white shadow-md rounded-md px-8 pt-6 pb-8 mb-4">
                 <h1 class="font-bold text-center mb-4 text-2xl">Login Siswa</h1>
                 <img src="./assets/logo-spp.png" alt="logo-spp" class="mb-5">
                 <div class="mb-4">
